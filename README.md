@@ -7,10 +7,8 @@ Each one of the maven commands calls different property files which basically co
 the different environments
 
 Simply running 
-```sh ./DemoArganoDev.sh``` 
-or 
-```sh ./DemoArganoSbx.sh``` 
-should do the trick
+```sh ./DemoStensul.sh``` 
+
 
 
 
