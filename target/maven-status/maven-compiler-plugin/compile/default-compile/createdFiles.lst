@@ -4,4 +4,3 @@ base/BasePage.class
 utilities/CommonUtilities.class
 base/EnvironmentProperties.class
 base/BaseTest.class
-base/ElementController.class

@@ -1,0 +1,34 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 33.593 s <<< FAILURE! - in TestSuite
+editAnItem(DemoTest)  Time elapsed: 10.332 s  <<< FAILURE!
+org.openqa.selenium.JavascriptException: 
+javascript error: Cannot read properties of null (reading 'scrollIntoView')
+  (Session info: chrome=101.0.4951.64)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Victors-MacBook-Pro.local', ip: '2806:267:1403:83e1:793f:f743:ba50:4bfc%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_202'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.64, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: /var/folders/mb/rx13lky17cv...}, goog:chromeOptions: {debuggerAddress: localhost:64516}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7f480ee4ff83b9502d782a4ec26f6cef
+	at DemoTest.editAnItem(DemoTest.java:21)
+
+deleteAnItem(DemoTest)  Time elapsed: 8.222 s  <<< FAILURE!
+java.lang.NullPointerException
+	at DemoTest.deleteAnItem(DemoTest.java:35)
+
+verifyDescriptionFieldMaxLength(DemoTest)  Time elapsed: 4.049 s  <<< FAILURE!
+org.openqa.selenium.ElementNotInteractableException: 
+element not interactable
+  (Session info: chrome=101.0.4951.64)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Victors-MacBook-Pro.local', ip: '2806:267:1403:83e1:793f:f743:ba50:4bfc%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_202'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.64, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: /var/folders/mb/rx13lky17cv...}, goog:chromeOptions: {debuggerAddress: localhost:64516}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7f480ee4ff83b9502d782a4ec26f6cef
+	at DemoTest.verifyDescriptionFieldMaxLength(DemoTest.java:41)
+
+checkElementInListAvailable(DemoTest)  Time elapsed: 5.454 s  <<< FAILURE!
+java.lang.NullPointerException
+	at DemoTest.checkElementInListAvailable(DemoTest.java:49)
+

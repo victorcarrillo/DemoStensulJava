@@ -34,7 +34,11 @@ public class BaseTest {
     @BeforeSuite
     public void init() {
         Log.startLog("Test Suite is starting");
+    }
 
+
+    @BeforeTest()
+    public void setup() {
         Log.info("Initialize WebDriver instance");
         driver = getDriver();
 
@@ -45,26 +49,6 @@ public class BaseTest {
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
         homePage = new HomePage(driver);
-    }
-
-    @AfterSuite
-    public void end() {
-        try {
-            Log.endLog("Test Suite is ending");
-        } catch (WebDriverException we) {
-            Log.fatal(we.getMessage());
-        } finally {
-            if (driver != null) {
-                driver.quit();
-                propi = null;
-                driver = null;
-            }
-        }
-
-    }
-
-    @BeforeTest()
-    public void setup() {
         Log.info("Open the web site to test");
         driver.get(propi.getProperty("webapp.website"));
         Log.info("Opening : " + propi.getProperty("webapp.website"));
@@ -80,15 +64,16 @@ public class BaseTest {
                 driver.quit();
             }
         } catch (Exception e) {
-
         }
+
     }
 
-    @AfterMethod
-    public void takeScreenshotOnFailure(ITestResult res) {
-        if (res.getStatus() == ITestResult.FAILURE) {
-            Log.fatal("Taking screenshot of the failure with status as " + res.getStatus());
-            CommonUtilities.takeScreenshot(driver, this.pathScreenshots, "FAILURE" + res.getName());
+    @AfterSuite
+    public void end() {
+        try {
+            Log.endLog("Test Suite is ending");
+        } catch (WebDriverException we) {
+            Log.fatal(we.getMessage());
         }
     }
 
