@@ -1,11 +1,14 @@
 package base;
 
+import com.sun.org.apache.xpath.internal.operations.Bool;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.PageLoadStrategy;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.devtools.DevTools;
+import org.openqa.selenium.devtools.v85.emulation.Emulation;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.firefox.FirefoxProfile;
@@ -20,6 +23,7 @@ import utilities.CommonUtilities;
 import utilities.Log;
 
 import java.util.*;
+import java.util.Optional;
 import java.util.concurrent.TimeUnit;
 
 public class BaseTest {
@@ -29,6 +33,7 @@ public class BaseTest {
     protected String pathScreenshots = projectPath + "/screenshots/";
     protected Properties propi = EnvironmentProperties.getProperties();
     protected WebDriver driver;
+    protected ChromeDriver driverChrome;
     protected HomePage homePage;
 
     @BeforeSuite
@@ -138,7 +143,7 @@ public class BaseTest {
                     if (propi.getProperty("webapp.incognito").equals("true")) {
                         profile.setPreference("browser.private.browsing.autostart", true);
                     }
-                    dc.setCapability(FirefoxDriver.PROFILE, profile);
+                    //dc.setCapability(FirefoxDriver.PROFILE, profile);
                     dc.setCapability("marionette", true);
                     System.setProperty("webdriver.gecko.driver",
                             projectPath + "\\drivers\\windows\\geckodriver.exe");
@@ -155,14 +160,23 @@ public class BaseTest {
                     System.setProperty("webdriver.chrome.driver", projectPath + "/drivers/mac/chromedriver");
 
                     if(propi.getProperty("webapp.mobileSetup").equalsIgnoreCase("true")) {
-                        Map<String, String> mobileEmulation = new HashMap<String, String>();
-                        mobileEmulation.put("deviceName",propi.getProperty("webapp.mobileDevice"));
+                        driverChrome = new ChromeDriver();
+                        DevTools devTools = driverChrome.getDevTools();
+                        devTools.createSession();
+                        devTools.send(Emulation.setDeviceMetricsOverride(
+                                600,
+                                1000,
+                                50,
+                                true,
+                                Optional.empty(),
+                                Optional.empty(),
+                                Optional.empty(),
+                                Optional.empty(),
+                                Optional.empty(),
+                                Optional.empty(),
+                                Optional.empty(),
+                                Optional.empty()));
 
-                        Map<String, Object> chromeOptions = new HashMap<String,Object>();
-                        chromeOptions.put("mobileEmulation", mobileEmulation);
-                        DesiredCapabilities capabilities = DesiredCapabilities.chrome();
-                        capabilities.setCapability(ChromeOptions.CAPABILITY, chromeOptions);
-                        driver = new ChromeDriver(capabilities);
                     } else {
                         ChromeOptions op = new ChromeOptions();
                         if (propi.getProperty("webapp.headlessExecution").equals("true")) {
@@ -179,7 +193,7 @@ public class BaseTest {
                         op.addArguments("--no-sandbox");
                         op.addArguments("--disable-dev-shm-usage");
 
-                        driver = new ChromeDriver(op);
+                        driverChrome = new ChromeDriver(op);
                     }
                 }
                 else if (propBrowser.contentEquals("ff") || propBrowser.contentEquals("firefox")) {
@@ -198,7 +212,7 @@ public class BaseTest {
                     if (propi.getProperty("webapp.incognito").equals("true")) {
                         profile.setPreference("browser.private.browsing.autostart", true);
                     }
-                    dc.setCapability(FirefoxDriver.PROFILE, profile);
+                    //dc.setCapability(FirefoxDriver.PROFILE, profile);
                     dc.setCapability("marionette", true);
 
                     System.setProperty("webdriver.gecko.driver",
@@ -213,7 +227,7 @@ public class BaseTest {
             }
         }
 
-        return driver;
+        return driverChrome;
     }
 
 

@@ -6,6 +6,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import utilities.CommonUtilities;
 import utilities.Log;
 
+import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
@@ -25,7 +26,7 @@ public class BasePage {
 	}
 
 	public WebDriverWait wait(int secs) {
-		return new WebDriverWait(driver, secs);
+		return new WebDriverWait(driver, Duration.ofSeconds(secs));
 	}
 
 	protected WebElement getElement(By by, int secs) {
@@ -50,7 +51,7 @@ public class BasePage {
 			ele = wait(secs)
 					.ignoring(TimeoutException.class, NoSuchElementException.class)
 					.ignoring(StaleElementReferenceException.class)
-					.until(ExpectedConditions.presenceOfElementLocated(by));
+			       .until(ExpectedConditions.presenceOfElementLocated(by));
 			return ele;
 		} catch (TimeoutException | NoSuchElementException e) {
 			Log.fatal("Element is not found during test execution.... " + e);

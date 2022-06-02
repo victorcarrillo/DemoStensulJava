@@ -19,6 +19,12 @@ public class EnvironmentProperties {
     public final String NOT_ACCEPTED_LENGTH_DESCRIPTION = props.getProperty("incorrect.description.lenght");
     public final String NEW_VALID_ITEM_DESCRIPTION = props.getProperty("valid.description.new.item");
 
+    //MOBILE SETUP
+    public final String MOBILE_WIDTH= props.getProperty("mobile.width");
+    public final String MOBILE_HEIGHT=props.getProperty("mobile.height");
+    public final String MOBILE_SETUP=props.getProperty("webapp.mobileSetup");
+    public final String MOBILE= props.getProperty("mobile");
+
     /**
      * Read the environment {server}.properties passed as parameter when run with MVN
      * if -Denv.USER not passed in command line then read local as default environment

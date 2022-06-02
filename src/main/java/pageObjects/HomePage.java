@@ -89,11 +89,18 @@ public class HomePage extends BasePage {
 
     }
 
-    public void writeDescriptionField(String description){
+    public void writeInvalidDescriptionField(String description){
         Log.info("Write Description in Field");
         ele = getElementPresenceOfElementLocated(byDescriptionField,5);
         ele.clear();
         ele.sendKeys(description + "  " + generateRandomString() );
+    }
+
+    public void writeDescriptionField(String description){
+        Log.info("Write Description in Field");
+        ele = getElementPresenceOfElementLocated(byDescriptionField,5);
+        ele.clear();
+        ele.sendKeys(description);
     }
 
     public String generateRandomString(){

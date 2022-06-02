@@ -45,7 +45,7 @@ public class DemoTest extends BaseTest {
         Log.info("Executing TEST CASE 4");
         homePage.writeDescriptionField(env.ACCEPTED_LENGTH_DESCRIPTION);
         Assert.assertTrue(homePage.isCreateItemEnabled());
-        homePage.writeDescriptionField(env.NOT_ACCEPTED_LENGTH_DESCRIPTION);
+        homePage.writeInvalidDescriptionField(env.NOT_ACCEPTED_LENGTH_DESCRIPTION);
         Assert.assertFalse(homePage.isCreateItemEnabled());
     }
 
