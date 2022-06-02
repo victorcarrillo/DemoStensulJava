@@ -9,11 +9,7 @@
           <include name="setup"/>
           <include name="teardown"/>
           <include name="end"/>
-          <include name="editAnItem"/>
-          <include name="takeScreenshotOnFailure"/>
           <include name="init"/>
-          <include name="checkElementInListAvailable"/>
-          <include name="verifyDescriptionFieldMaxLength"/>
         </methods>
       </class> <!-- DemoTest -->
     </classes>

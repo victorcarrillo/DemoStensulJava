@@ -78,12 +78,14 @@ public class HomePage extends BasePage {
         By byDeleteButton = byXpathLocator(strItemTable,strDeleteButton,itemIndex);
         implicitWaitFor(5);
         ele = getElementPresenceOfElementLocated(byDeleteButton,5);
+        scroll2Element(ele);
         ele.click();
     }
 
     public void clickConfirmDelete(){
         Log.info("Click on Confirm Delete Button");
         ele = getElementPresenceOfElementLocated(byConfirmDeleteButton,5);
+        scroll2Element(ele);
         ele.click();
         waitForNSeconds(2);
 

@@ -9,53 +9,33 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">Suite Account</th></tr>
-<tr><td><a href="#t0">Validate Page</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">4</td><td class="num">30,249</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Validate Page</a></td><td class="num">3</td><td class="num">0</td><td class="num attn">1</td><td class="num">11,806</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite Account</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Validate Page &#8212; failed</th></tr><tr class="failedeven"><td rowspan="4">DemoTest</td><td><a href="#m0">checkElementInListAvailable</a></td><td rowspan="1">1653412918955</td><td rowspan="1">5454</td></tr><tr class="failedeven"><td><a href="#m1">deleteAnItem</a></td><td rowspan="1">1653412906224</td><td rowspan="1">8221</td></tr><tr class="failedeven"><td><a href="#m2">editAnItem</a></td><td rowspan="1">1653412895719</td><td rowspan="1">10324</td></tr><tr class="failedeven"><td><a href="#m3">verifyDescriptionFieldMaxLength</a></td><td rowspan="1">1653412914638</td><td rowspan="1">4049</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite Account</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Validate Page &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">DemoTest</td><td><a href="#m0">deleteAnItem</a></td><td rowspan="1">1654146682500</td><td rowspan="1">1905</td></tr><tr><th colspan="4">Validate Page &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">DemoTest</td><td><a href="#m1">checkElementInListAvailable</a></td><td rowspan="1">1654146685224</td><td rowspan="1">297</td></tr><tr class="passedeven"><td><a href="#m2">editAnItem</a></td><td rowspan="1">1654146681886</td><td rowspan="1">612</td></tr><tr class="passedeven"><td><a href="#m3">verifyDescriptionFieldMaxLength</a></td><td rowspan="1">1654146684438</td><td rowspan="1">785</td></tr></tbody>
 </table>
-<h2>Validate Page</h2><h3 id="m0">DemoTest#checkElementInListAvailable</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
-	at pageObjects.HomePage.isElementInList(HomePage.java:50)
-	at DemoTest.checkElementInListAvailable(DemoTest.java:49)
-... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">DemoTest#deleteAnItem</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
-	at pageObjects.HomePage.getNumberOfItemsPresent(HomePage.java:57)
-	at DemoTest.deleteAnItem(DemoTest.java:35)
-... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">DemoTest#editAnItem</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.JavascriptException: javascript error: Cannot read properties of null (reading &apos;scrollIntoView&apos;)
-  (Session info: chrome=101.0.4951.64)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;Victors-MacBook-Pro.local&apos;, ip: &apos;2806:267:1403:83e1:793f:f743:ba50:4bfc%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.16&apos;, java.version: &apos;1.8.0_202&apos;
+<h2>Validate Page</h2><h3 id="m0">DemoTest#deleteAnItem</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot; ng-click=&quot;strangerlist.open(item)&quot;&gt;...&lt;/button&gt; is not clickable at point (526, 17). Other element would receive the click: &lt;div class=&quot;navbar-header&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=102.0.5005.61)
+Build info: version: &apos;4.1.4&apos;, revision: &apos;535d840ee2&apos;
+System info: host: &apos;Victors-MacBook-Pro.local&apos;, ip: &apos;2806:267:1403:83e1:c11:80d9:e3d6:3c98%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.16&apos;, java.version: &apos;1.8.0_202&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.64, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: /var/folders/mb/rx13lky17cv...}, goog:chromeOptions: {debuggerAddress: localhost:64516}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 7f480ee4ff83b9502d782a4ec26f6cef
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:489)
-	at base.BasePage.scroll2Element(BasePage.java:81)
-	at pageObjects.HomePage.getCurrentItemDescription(HomePage.java:72)
-	at DemoTest.editAnItem(DemoTest.java:21)
+Command: [ab59dcff05f1e23a9cdf5591ac7a47a0, clickElement {id=41a76c0c-92c0-4b0e-9a2b-f793256a1ec2}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.61, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: /var/folders/mb/rx13lky17cv...}, goog:chromeOptions: {debuggerAddress: localhost:58374}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:58374/devtoo..., se:cdpVersion: 102.0.5005.61, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on MAC (ab59dcff05f1e23a9cdf5591ac7a47a0)] -&gt; xpath: //li[2]/div/div/div[1]/button[contains(text(),&apos;Delete&apos;)]]
+Session ID: ab59dcff05f1e23a9cdf5591ac7a47a0
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at pageObjects.HomePage.clickDeleteButton(HomePage.java:81)
+	at DemoTest.deleteAnItem(DemoTest.java:36)
 ... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">DemoTest#verifyDescriptionFieldMaxLength</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=101.0.4951.64)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;Victors-MacBook-Pro.local&apos;, ip: &apos;2806:267:1403:83e1:793f:f743:ba50:4bfc%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.16&apos;, java.version: &apos;1.8.0_202&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.64, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: /var/folders/mb/rx13lky17cv...}, goog:chromeOptions: {debuggerAddress: localhost:64516}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 7f480ee4ff83b9502d782a4ec26f6cef
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:124)
-	at pageObjects.HomePage.writeDescriptionField(HomePage.java:95)
-	at DemoTest.verifyDescriptionFieldMaxLength(DemoTest.java:41)
-... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">DemoTest#checkElementInListAvailable</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">DemoTest#editAnItem</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">DemoTest#verifyDescriptionFieldMaxLength</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

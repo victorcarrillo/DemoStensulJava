@@ -96,3 +96,27 @@
 2022-06-01 22:37:23 INFO  Log:25 - Ending Testing ...Test node is ending
 2022-06-01 22:37:23 INFO  Log:25 - Ending Testing ...Driver close
 2022-06-01 22:37:23 INFO  Log:25 - Ending Testing ...Test Suite is ending
+2022-06-02 00:11:13 INFO  Log:20 - Starting Testing ...Test Suite is starting
+2022-06-02 00:11:13 INFO  Log:30 - Initialize WebDriver instance
+2022-06-02 00:11:13 INFO  Log:30 - Deleting Cookies
+2022-06-02 00:11:13 INFO  Log:30 - Applying the implicit wait during 10 seconds
+2022-06-02 00:11:13 INFO  Log:30 - Open the web site to test
+2022-06-02 00:11:21 INFO  Log:30 - Opening : http://immense-hollows-74271.herokuapp.com/
+2022-06-02 00:11:21 INFO  Log:30 - Executing TEST CASE 2
+2022-06-02 00:11:21 INFO  Log:30 - Get current description of item
+2022-06-02 00:11:21 INFO  Log:30 - Click on Edit Button
+2022-06-02 00:11:22 INFO  Log:30 - Write Description in Field
+2022-06-02 00:11:22 INFO  Log:30 - Click Update Item
+2022-06-02 00:11:22 INFO  Log:30 - Get current description of item
+2022-06-02 00:11:22 INFO  Log:30 - Executing TEST CASE 3
+2022-06-02 00:11:23 INFO  Log:30 - Click on Delete Button
+2022-06-02 00:11:24 INFO  Log:30 - Executing TEST CASE 4
+2022-06-02 00:11:24 INFO  Log:30 - Write Description in Field
+2022-06-02 00:11:24 INFO  Log:30 - Validate if Create Item is Enabled
+2022-06-02 00:11:24 INFO  Log:30 - Write Description in Field
+2022-06-02 00:11:25 INFO  Log:30 - Validate if Create Item is Enabled
+2022-06-02 00:11:25 INFO  Log:30 - Executing TEST CASE 5
+2022-06-02 00:11:25 INFO  Log:30 - Validate if Creators: Matt Duffer, Ross Duffer is present on the page
+2022-06-02 00:11:25 INFO  Log:25 - Ending Testing ...Test node is ending
+2022-06-02 00:11:25 INFO  Log:25 - Ending Testing ...Driver close
+2022-06-02 00:11:25 INFO  Log:25 - Ending Testing ...Test Suite is ending

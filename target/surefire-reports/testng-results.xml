@@ -1,184 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="4" ignored="0" total="4" passed="0">
+<testng-results skipped="0" failed="1" ignored="0" total="4" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite Account" duration-ms="30249" started-at="2022-05-24T17:21:34Z" finished-at="2022-05-24T17:22:04Z">
+  <suite name="Suite Account" duration-ms="11806" started-at="2022-06-02T05:11:13Z" finished-at="2022-06-02T05:11:25Z">
     <groups>
     </groups>
-    <test name="Validate Page" duration-ms="30249" started-at="2022-05-24T17:21:34Z" finished-at="2022-05-24T17:22:04Z">
+    <test name="Validate Page" duration-ms="11806" started-at="2022-06-02T05:11:13Z" finished-at="2022-06-02T05:11:25Z">
       <class name="DemoTest">
-        <test-method status="PASS" signature="init()[pri:0, instance:DemoTest@45d84a20]" name="init" is-config="true" duration-ms="352" started-at="2022-05-24T17:21:34Z" finished-at="2022-05-24T17:21:34Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:DemoTest@7bfc3126]" name="init" is-config="true" duration-ms="20" started-at="2022-06-02T05:11:13Z" finished-at="2022-06-02T05:11:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:DemoTest@45d84a20]" name="setup" is-config="true" duration-ms="1088" started-at="2022-05-24T17:21:34Z" finished-at="2022-05-24T17:21:35Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:DemoTest@7bfc3126]" name="setup" is-config="true" duration-ms="7900" started-at="2022-06-02T05:11:13Z" finished-at="2022-06-02T05:11:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="FAIL" signature="editAnItem()[pri:2, instance:DemoTest@45d84a20]" name="editAnItem" duration-ms="10324" started-at="2022-05-24T17:21:35Z" finished-at="2022-05-24T17:21:46Z">
-          <exception class="org.openqa.selenium.JavascriptException">
-            <message>
-              <![CDATA[javascript error: Cannot read properties of null (reading 'scrollIntoView')
-  (Session info: chrome=101.0.4951.64)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'Victors-MacBook-Pro.local', ip: '2806:267:1403:83e1:793f:f743:ba50:4bfc%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_202'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.64, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: /var/folders/mb/rx13lky17cv...}, goog:chromeOptions: {debuggerAddress: localhost:64516}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 7f480ee4ff83b9502d782a4ec26f6cef]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.JavascriptException: javascript error: Cannot read properties of null (reading 'scrollIntoView')
-  (Session info: chrome=101.0.4951.64)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'Victors-MacBook-Pro.local', ip: '2806:267:1403:83e1:793f:f743:ba50:4bfc%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_202'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.64, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: /var/folders/mb/rx13lky17cv...}, goog:chromeOptions: {debuggerAddress: localhost:64516}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 7f480ee4ff83b9502d782a4ec26f6cef
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:489)
-at base.BasePage.scroll2Element(BasePage.java:81)
-at pageObjects.HomePage.getCurrentItemDescription(HomePage.java:72)
-at DemoTest.editAnItem(DemoTest.java:21)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
-at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.JavascriptException -->
+        <test-method status="PASS" signature="editAnItem()[pri:2, instance:DemoTest@7bfc3126]" name="editAnItem" duration-ms="612" started-at="2022-06-02T05:11:21Z" finished-at="2022-06-02T05:11:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- editAnItem -->
-        <test-method status="PASS" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:DemoTest@45d84a20]" name="takeScreenshotOnFailure" is-config="true" duration-ms="173" started-at="2022-05-24T17:21:46Z" finished-at="2022-05-24T17:21:46Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=editAnItem status=FAILURE method=DemoTest.editAnItem()[pri:2, instance:DemoTest@45d84a20] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method status="FAIL" signature="deleteAnItem()[pri:3, instance:DemoTest@45d84a20]" name="deleteAnItem" duration-ms="8221" started-at="2022-05-24T17:21:46Z" finished-at="2022-05-24T17:21:54Z">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-at pageObjects.HomePage.getNumberOfItemsPresent(HomePage.java:57)
-at DemoTest.deleteAnItem(DemoTest.java:35)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
-at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- deleteAnItem -->
-        <test-method status="PASS" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:DemoTest@45d84a20]" name="takeScreenshotOnFailure" is-config="true" duration-ms="192" started-at="2022-05-24T17:21:54Z" finished-at="2022-05-24T17:21:54Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=deleteAnItem status=FAILURE method=DemoTest.deleteAnItem()[pri:3, instance:DemoTest@45d84a20] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method status="FAIL" signature="verifyDescriptionFieldMaxLength()[pri:4, instance:DemoTest@45d84a20]" name="verifyDescriptionFieldMaxLength" duration-ms="4049" started-at="2022-05-24T17:21:54Z" finished-at="2022-05-24T17:21:58Z">
-          <exception class="org.openqa.selenium.ElementNotInteractableException">
+        <test-method status="FAIL" signature="deleteAnItem()[pri:3, instance:DemoTest@7bfc3126]" name="deleteAnItem" duration-ms="1905" started-at="2022-06-02T05:11:22Z" finished-at="2022-06-02T05:11:24Z">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
             <message>
-              <![CDATA[element not interactable
-  (Session info: chrome=101.0.4951.64)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'Victors-MacBook-Pro.local', ip: '2806:267:1403:83e1:793f:f743:ba50:4bfc%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_202'
+              <![CDATA[element click intercepted: Element <button type="button" class="btn btn-default" ng-click="strangerlist.open(item)">...</button> is not clickable at point (526, 17). Other element would receive the click: <div class="navbar-header">...</div>
+  (Session info: chrome=102.0.5005.61)
+Build info: version: '4.1.4', revision: '535d840ee2'
+System info: host: 'Victors-MacBook-Pro.local', ip: '2806:267:1403:83e1:c11:80d9:e3d6:3c98%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_202'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.64, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: /var/folders/mb/rx13lky17cv...}, goog:chromeOptions: {debuggerAddress: localhost:64516}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 7f480ee4ff83b9502d782a4ec26f6cef]]>
+Command: [ab59dcff05f1e23a9cdf5591ac7a47a0, clickElement {id=41a76c0c-92c0-4b0e-9a2b-f793256a1ec2}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.61, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: /var/folders/mb/rx13lky17cv...}, goog:chromeOptions: {debuggerAddress: localhost:58374}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:58374/devtoo..., se:cdpVersion: 102.0.5005.61, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on MAC (ab59dcff05f1e23a9cdf5591ac7a47a0)] -> xpath: //li[2]/div/div/div[1]/button[contains(text(),'Delete')]]
+Session ID: ab59dcff05f1e23a9cdf5591ac7a47a0]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=101.0.4951.64)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'Victors-MacBook-Pro.local', ip: '2806:267:1403:83e1:793f:f743:ba50:4bfc%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_202'
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button type="button" class="btn btn-default" ng-click="strangerlist.open(item)">...</button> is not clickable at point (526, 17). Other element would receive the click: <div class="navbar-header">...</div>
+  (Session info: chrome=102.0.5005.61)
+Build info: version: '4.1.4', revision: '535d840ee2'
+System info: host: 'Victors-MacBook-Pro.local', ip: '2806:267:1403:83e1:c11:80d9:e3d6:3c98%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_202'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.64, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: /var/folders/mb/rx13lky17cv...}, goog:chromeOptions: {debuggerAddress: localhost:64516}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 7f480ee4ff83b9502d782a4ec26f6cef
+Command: [ab59dcff05f1e23a9cdf5591ac7a47a0, clickElement {id=41a76c0c-92c0-4b0e-9a2b-f793256a1ec2}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.61, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: /var/folders/mb/rx13lky17cv...}, goog:chromeOptions: {debuggerAddress: localhost:58374}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:58374/devtoo..., se:cdpVersion: 102.0.5005.61, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on MAC (ab59dcff05f1e23a9cdf5591ac7a47a0)] -> xpath: //li[2]/div/div/div[1]/button[contains(text(),'Delete')]]
+Session ID: ab59dcff05f1e23a9cdf5591ac7a47a0
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-at org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:124)
-at pageObjects.HomePage.writeDescriptionField(HomePage.java:95)
-at DemoTest.verifyDescriptionFieldMaxLength(DemoTest.java:41)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+at pageObjects.HomePage.clickDeleteButton(HomePage.java:81)
+at DemoTest.deleteAnItem(DemoTest.java:36)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -210,78 +88,23 @@ at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
 at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteAnItem -->
+        <test-method status="PASS" signature="verifyDescriptionFieldMaxLength()[pri:4, instance:DemoTest@7bfc3126]" name="verifyDescriptionFieldMaxLength" duration-ms="785" started-at="2022-06-02T05:11:24Z" finished-at="2022-06-02T05:11:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyDescriptionFieldMaxLength -->
-        <test-method status="PASS" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:DemoTest@45d84a20]" name="takeScreenshotOnFailure" is-config="true" duration-ms="267" started-at="2022-05-24T17:21:58Z" finished-at="2022-05-24T17:21:58Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyDescriptionFieldMaxLength status=FAILURE method=DemoTest.verifyDescriptionFieldMaxLength()[pri:4, instance:DemoTest@45d84a20] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method status="FAIL" signature="checkElementInListAvailable()[pri:5, instance:DemoTest@45d84a20]" name="checkElementInListAvailable" duration-ms="5454" started-at="2022-05-24T17:21:58Z" finished-at="2022-05-24T17:22:04Z">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-at pageObjects.HomePage.isElementInList(HomePage.java:50)
-at DemoTest.checkElementInListAvailable(DemoTest.java:49)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
-at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        <test-method status="PASS" signature="checkElementInListAvailable()[pri:5, instance:DemoTest@7bfc3126]" name="checkElementInListAvailable" duration-ms="297" started-at="2022-06-02T05:11:25Z" finished-at="2022-06-02T05:11:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkElementInListAvailable -->
-        <test-method status="PASS" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:DemoTest@45d84a20]" name="takeScreenshotOnFailure" is-config="true" duration-ms="262" started-at="2022-05-24T17:22:04Z" finished-at="2022-05-24T17:22:04Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=checkElementInListAvailable status=FAILURE method=DemoTest.checkElementInListAvailable()[pri:5, instance:DemoTest@45d84a20] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:DemoTest@45d84a20]" name="teardown" is-config="true" duration-ms="189" started-at="2022-05-24T17:22:04Z" finished-at="2022-05-24T17:22:04Z">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:DemoTest@7bfc3126]" name="teardown" is-config="true" duration-ms="248" started-at="2022-06-02T05:11:25Z" finished-at="2022-06-02T05:11:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method status="PASS" signature="end()[pri:0, instance:DemoTest@45d84a20]" name="end" is-config="true" duration-ms="1" started-at="2022-05-24T17:22:04Z" finished-at="2022-05-24T17:22:04Z">
+        <test-method status="PASS" signature="end()[pri:0, instance:DemoTest@7bfc3126]" name="end" is-config="true" duration-ms="0" started-at="2022-06-02T05:11:25Z" finished-at="2022-06-02T05:11:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- end -->
